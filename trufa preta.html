@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title> CHOK </title>
+<link rel="icon" href="img/'C'.png" type="img">
+<link rel="stylesheet" type="text/css" href="css/produtos.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo-navbar" href="index.html" src="img/LOGO COM SLOGANN.png" alt="logo">
+        <input class="bt-navbar" type="text" placeholder="Encontre seus produtos aqui...">
+        <button class="bt-pesquisa" type="submit"> Pesquisar </button>
+        <img class="icone-carrinho" src="img/carrinho.png" alt="logo">
+        <img class="icone-pessoa" src="img/pessoa.png" alt="logo">
+    </div>
+    <div class="barra">
+        <a href="quem somoss.html"> QUEM SOMOS? </a>
+        <a href="nossos produtos.html"> NOSSOS PRODUTOS </a>
+        <a href="onde encontrar.html"> ONDE ENCONTRAR </a>
+        <a href="#"> CHOK GIRO </a>
+    </div>
+
+    <div class="product-container">
+        <img class="product-image" src="img/bombom1.png" alt="Imagem da trufa">
+        <div class="product-info">
+            <h1>CHOK TRUFA</h1>
+            <div class="description">
+                <p>Trufa meio amarga recheada - 15g</p>
+                <p class="product-price"> R$ 2,50</p>
+
+                
+                <div id="counter-container">
+                    <button onclick="decreaseCounter()">-</button>
+                    <p id="counter">0</p>
+                    <button onclick="increaseCounter()">+</button> 
+                   
+                    <button id="red-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+                </div>
+                <script>
+                    let counterValue = 0;
+                
+                    function updateCounter() {
+                        document.getElementById('counter').textContent = counterValue;
+                    }
+                
+                    function increaseCounter() {
+                        counterValue++;
+                        updateCounter();
+                    }
+                
+                    function decreaseCounter() {
+                        if (counterValue > 0) {
+                            counterValue--;
+                            updateCounter();
+                        }
+                    }
+                
+                    function resetCounter() {
+                        counterValue = 0;
+                        updateCounter();
+                    }
+                
+                    function addToCart() {
+                        alert('Produto Adicionado ao Carrinho!');
+                    }
+                </script>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="contet">
+    <div class="pg7">
+        <img class="produto5" src="img/chok pop.png" alt="Produto 1">
+    <h2>POP CHOK</h2>
+    <h5> Pipocas Gourmet - 200g</h5>
+    <h1> R$ 15,00 </h1>
+    <button class="bt2" type="button"> Adicionar ao carrinho </button>
+    </div>
+    <div class="pg5">
+        <img class="produto5" src="C:\Users\Aluno\Downloads\chok\img\chok world montado (2).png" alt="Produto 1">
+        <h2>CHOK WORLD</h2>
+        <h5> Ovo de chocolate recheado - 300g</h5>
+        <h1> R$ 39,99 </h1>
+        <button class="bt2" type="button"> Adicionar ao carrinho </button>
+    </div>
+    <div class="pg8">
+        <img class="produto8" src="img/bombom3.png" alt="Produto 1">
+        <h2>CHOK TRUFA</h2>
+        <h5> Trufa ao leite recheada - 15g</h5>
+        <h1> R$ 2,50 </h1>
+        <button class="bt2" type="button"> Adicionar ao carrinho </button>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="ft">
+        <img class="logo-footer" src="img/image.png" alt="logomarca">
+    </div>
+    <div class="ft">
+        <h4 href="#">Política de privacidade</h4>
+        <h4 href="#">Política de Reembolso</h4>
+        <h4 href="#">Termos e Condições</h4>
+    </div>
+    <div class="ft">
+        <h4 href="#">Perguntas frenquentes</h4>
+        <h4 href="#">Fale Conosco</h4>
+        <h4 href="#">Reclame Aqui</h4>
+    </div>
+    <div class="coluna-icon">
+    <div class="instagram">
+        <img class="logo-insta" src="img/insta.png" alt="logoinsta">
+        <h4 href="#">@chok</h4>
+    </div>
+    <div class="facebook">
+        <img class="logo-facebook" src="img/facee.png" alt="logoface">
+        <h4 href="#">@chok</h4>
+    </div>
+
+    </div>
+</div>
+
+</body>
+</html>

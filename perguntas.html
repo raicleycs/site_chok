@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title> CHOK </title>
+<link rel="icon" href="img/'C'.png" type="img">
+<link rel="stylesheet" type="text/css" href="css/perguntas2.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo-navbar" href="index.html" src="img/LOGO COM SLOGANN.png" alt="logo">
+        <input class="bt-navbar" type="text" placeholder="Encontre seus produtos aqui...">
+        <button class="bt-pesquisa" type="submit"> Pesquisar </button>
+        <img class="icone-carrinho" src="img/carrinho.png" alt="logo">
+        <img class="icone-pessoa" src="img/pessoa.png" alt="logo">
+    </div>
+    <div class="barra">
+        <a href="quem somoss.html"> QUEM SOMOS? </a>
+        <a href="nossos produtos.html"> NOSSOS PRODUTOS </a>
+        <a href="onde encontrar.html"> ONDE ENCONTRAR </a>
+        <a href="chok giro.html"> CHOK GIRO </a>
+    </div>
+    <div class="faq-container">
+        <br>
+        <div class="question" onclick="toggleAnswer(1)">Como comprar
+        </div>
+        <div class="answer" id="answer1">Navegue em nosso site, conheça nossas variedades de chocolates finos, cadastre-se para receber nossa newsletter e receba as melhores promoções também por e-mail. Para realizar uma compra, você pode buscar por produtos através das categorias que se encontram no menu superior do site. Caso não saiba qual produto quer adquirir, você poderá buscá-lo na ferramenta de busca que fica acima do menu superior da página. A cada produto que você clicar, abrirá uma nova página que informará a descrição, detalhes do produto, a composição e Informação Nutricional. Ao final da sua escolha clique no botão “Comprar”. Você será redirecionado para a página da sacola de compras. Não é necessário se cadastrar antes de comprar, pois assim que você clicar no botão “Finalizar Compra”, o sistema solicitará que insira seu e-mail. Assim que inserir, uma página será aberta para inserir seus dados pessoais, dados de entrega e forma de pagamento, tudo bem simples e rápido para não tomar muito o seu tempo!</div>
+<br>
+        <div class="question" onclick="toggleAnswer(2)">Preciso me cadastrar no site antes de comprar?</div>
+        <div class="answer" id="answer2">Não é necessário se cadastrar antes de comprar: basta clicar no botão “Finalizar Compra”, e o site solicitará seu e- mail. O site irá guiá-lo pelo processo de compra. Para finalizar a compra, você precisará inserir seus dados pessoais, endereço de entrega e os dados para pagamento.</div>
+        <br>
+        <div class="question" onclick="toggleAnswer(3)">Qual o valor do frete?</div>
+        <div class="answer" id="answer3">O valor do seu frete é calculado de acordo com o peso e a dimensão dos produtos que você escolheu e também do endereço de entrega. Para saber qual será o valor é só informar o seu CEP na sacola e pedir para calcular.</div>
+        <br>
+        <div class="question" onclick="toggleAnswer(4)">Esqueci minha senha, como proceder?</div>
+        <div class="answer" id="answer4">No canto superior direito clique na opção “Entrar”. Existem 2 opções para recuperar a senha: clicando na opção “Receber chave de acesso rápido por e-mail” e a opção “Entrar com e-mail e senha”. Nesta última você deve clicar em “Esqueci minha senha”, será solicitado o e-mail que foi cadastrado para envio de um código por e-mail. Siga os passos e você conseguirá cadastrar uma nova senha rapidamente.
+            Você também pode se logar pelo seu email do Google, desta forma não precisará informar a senha do site, somente o login e senha da ferramenta que escolheu.</div>
+          <br>
+            <div class="question" onclick="toggleAnswer(5)">Posso trocar ou devolver um produto?</div>
+            <div class="answer" id="answer5">Os clientes poderão efetuar a troca ou devolução do(s) produto(s) adquirido(s) através do site, de acordo com o previsto no Código de Defesa do Consumidor. Para efetuar trocas ou devoluções de artigos comprados na loja da CHOK o cliente deverá entrar em contato conosco através do link “Fale Conosco”, no rodapé da página, ou com o SAC da loja Online Chocolates CHOK 0800-770-0201, de segunda a sexta das 09h00 às 18h00. Para mais informações veja nossa política de Troca e Devolução clicando na opção no lado direito do rodapé da página.</div>
+    <br>
+            <div class="question" onclick="toggleAnswer(6)">Preciso estar em casa para receber meus produtos?</div>
+            <div class="answer" id="answer6">Não. Mas é necessário que uma pessoa apta a receber e assinar a entrega esteja presente no endereço informado no ato da entrega. A pessoa deve ser maior de 18 anos e estar com RG em mãos. Em caso de entregas em prédios, a encomenda será deixada na portaria mediante assinatura de um responsável pelo recebimento.</div>
+    
+    </div>
+    <br>
+    <script>
+        function toggleAnswer(questionNumber) {
+            var answerId = 'answer' + questionNumber;
+            var answerElement = document.getElementById(answerId);
+
+            if (answerElement.style.display === 'block') {
+                answerElement.style.display = 'none';
+            } else {
+                answerElement.style.display = 'block';
+            }
+        }
+    </script>
+ <div class="question-box">
+    <h2>Faça sua pergunta:</h2>
+
+    <form id="questionForm">
+        <textarea id="questionInput" placeholder="Digite sua dúvida aqui..." required></textarea>
+        <br>
+        <button type="button" onclick="submitQuestion()">Enviar Pergunta</button>
+    </form>
+
+    <div id="questionResult"></div>
+</div>
+
+<script>
+    function submitQuestion() {
+        var questionInput = document.getElementById('questionInput').value;
+        var questionResult = document.getElementById('questionResult');
+
+        // Aqui você pode processar a pergunta, enviar para o servidor, etc.
+        // Neste exemplo, apenas exibimos a pergunta na página.
+        questionResult.innerHTML = '<p>Sua pergunta: ' + questionInput + '</p>';
+    }
+</script>
+<br>
+
+    <div class="footer">
+        <div class="ft">
+            <img class="logo-footer" src="img/image.png" alt="logomarca">
+        </div>
+        <div class="ft">
+            <h4 href="Privacidade.html">Política de privacidade</h4>
+            <h4 href="Devolução.html">Política de Reembolso</h4>
+            <h4 href="condição.html">Termos e Condições</h4>
+        </div>
+        <div class="ft">
+            <h4 href="#">Perguntas frenquentes</h4>
+            <h4 href="#">Fale Conosco</h4>
+            <h4 href="#">Reclame Aqui</h4>
+        </div>
+        <div class="coluna-icon">
+        <div class="instagram">
+            <img class="logo-insta" src="img/insta.png" alt="logoinsta">
+            <h4 href="#">@chok</h4>
+        </div>
+        <div class="facebook">
+            <img class="logo-facebook" src="img/facee.png" alt="logoface">
+            <h4 href="#">@chok</h4>
+        </div>
+    
+        </div>
+    </div>
+    
+    </body>
+    </html>
