@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <title> CHOK </title>
 <link rel="icon" href="img/'C'.png" type="img">
-<link rel="stylesheet" type="text/css" href="css/chok giro.css">
+<link rel="stylesheet" type="text/css" href="css/cadastro.css">
 </head>
 <body>
     <div class="navbar">
         <a href="index.html">
-        <img class="logo-navbar" href="index.html" src="img/LOGO COM SLOGANN.png" alt="logo">
-        </a>
+            <img class="logo-navbar" href="index.html" src="img/LOGO COM SLOGANN.png" alt="logo">
+            </a>
         <input class="bt-navbar" type="text" placeholder="Encontre seus produtos aqui...">
         <button class="bt-pesquisa" type="submit"> Pesquisar </button>
         <img class="icone-carrinho" src="img/carrinho.png" alt="logo">
@@ -24,23 +24,41 @@
         <a href="onde encontrar.html"> ONDE ENCONTRAR </a>
         <a href="chok giro.html"> CHOK GIRO </a>
     </div>
+    <section>
+        <h2>Preencha seus dados</h2>
+        <form id="signupForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="confirmPassword">Confirme a senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <br>
+            <button type="button" onclick="submitForm()">Cadastrar</button>
+        </form>
+    </section>
 
-    
-    <div class="corpo">
-    <div class="escrita">
-        <h3>CHOK GIRO:</h3>
-        <h5>Gire a roleta e ganhe um desconto para compras de acima R$100, cadastre-se e receba um código em seu e-mail que poderá ser utilizado em até 5 dias uteis.</h5>
-    </div>
+    <script>
+        function submitForm() {
+            var name = document.getElementById('name').value;
+            <br>
+            var email = document.getElementById('email').value;
+            <br>
+            var password = document.getElementById('password').value;
+            <br>
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            <br>
+            alert(`Cadastro realizado com sucesso!\nNome: ${name}\nEmail: ${email}`);
+        }
+        <br>
+    </script>
+    <br>
 
-    <div class="imagens">
-    <a href="https://wordwall.net/pt/resource/52064718/gire-e-ganhe-um-codigo-de-desconto-para-compras-acima-de-100">
-    <img class="qrcode" src="img/qrcodee.png" alt="qrcode">
-    </a>
-    <img class="anomatopeia" src="img/anomatopéia.png" alt="anomatopeia">
-    </div>
-    </div>
-    <br>
-    <br>
 
     <div class="footer">
         <div class="ft">
@@ -67,9 +85,9 @@
             <img class="logo-facebook" src="img/facee.png" alt="logoface">
             <a href="https://www.instagram.com/chok_ofc/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><h4>@chok</h4></a>
         </div>
-
+    
         </div>
     </div>
-
-</body>
-</html>
+    
+    </body>
+    </html>

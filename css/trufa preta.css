@@ -231,12 +231,14 @@ button {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .pg1 h2{
+    margin-top: 5px;
     color: black;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 80;
 }
 .pg2 h2{
+    margin-top: 20px;
     color: black;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
@@ -307,6 +309,7 @@ button {
     max-width: 290px;
 }
 .bt1{
+    margin-top: 30px;
     background-color: #911820;
     color: aliceblue;
     padding: 20px 60px;
@@ -315,14 +318,15 @@ button {
 .bt2{
     background-color: #911820;
     color: aliceblue;
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 20px 60px;
     border-radius: 5px;
 }
 .bt3{
+    margin-top: 100px;
     background-color: #911820;
     color: aliceblue;
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 30px;
     padding: 20px 60px;
     border-radius: 5px;
@@ -453,7 +457,7 @@ button {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .pg7 h2{
-    margin-top: 75px;
+    margin-top: 30px;
     color: black;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;

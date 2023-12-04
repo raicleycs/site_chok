@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title> CHOK </title>
 <link rel="icon" href="img/'C'.png" type="img">
-<link rel="stylesheet" type="text/css" href="css/quem somos.css">
+<link rel="stylesheet" type="text/css" href="css/nossos produtos.css">
 </head>
 <body>
     <div class="navbar">
@@ -24,19 +24,36 @@
         <a href="onde encontrar.html"> ONDE ENCONTRAR </a>
         <a href="chok giro.html"> CHOK GIRO </a>
     </div>
-    <div class="corpo">
-    <div class="escrita">
-        <h3>QUEM SOMOS?</h3>
 
-        <h5>  Fundada em 1989 em São Paulo capital a Chok foi pioneira no Brasil na fabricação exclusiva de filmes e séries. Nosso foco e missão é atender a crescente demanda de pessoas com estes interesses e incluir neste mundo. Aliás, esse é um dos nossos grandes diferenciais, oferecer uma experiência única. 
-            A qualidade é para nós uma prioridade. Nossos chocolates são produzidos com a nossa própria matéria prima, processada desde a massa e manteiga de cacau até o produto final. Isso nos permite selecionar os melhores insumos .
-            A Chok possui o certificado Kosher sob rigorosa supervisão do Rabino Meir Abraham Iliovits da empresa BKA atendendo a todas as normais internacionais. Esta certificação é sinônimo de um produto qualificado e supervisionado desde o momento da compra da matéria prima até a sua expedição. 
-           Temos abrangência em todo do estado de São paulo atendendo desde lojas especializadas em produtos naturais até indústrias, buffets e restaurantes que utilizam barras de chocolate para uso culinário ou industrial.</h5>
-    </div>
-    <div class="fachada">
-        <img class="imgfachada" src="img/fachada chok.png" alt="fachada loja">
-    </div>
-</div>
+<section>
+    <h2>Fale Conosco</h2>
+    <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+<br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+        <br>
+        <button type="button" onclick="submitForm()">Enviar Mensagem</button>
+    </form>
+    <div id="formResult"></div>
+</section>
+
+<script>
+    function submitForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        var formResult = document.getElementById('formResult');
+
+        formResult.innerHTML = `<p>Obrigado, ${name}! Recebemos sua mensagem:</p><p>${message}</p>`;
+    }
+</script>
+
 <div class="footer">
     <div class="ft">
         <a href="index.html">
@@ -68,3 +85,4 @@
 
 </body>
 </html>
+    
